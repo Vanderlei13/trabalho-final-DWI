@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="scripts.js">
+</head>
+
+<body>
+    <main class="main">
+        <header class="cabecalho">
+            <div class="logo">
+                <img src="logo.png" alt="Task Manager" class="logo">
+            </div>
+            <div>
+                <h1 id="loginTitle">Task Manager</h1>
+                <p class="texto">Cadastre a tarefa desejada</p>
+            </div>
+        </header>
+
+        <form id="loginForm" novalidate>
+            <div class="row">
+                <div class="descricao preencher">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao" placeholder="Descreva a tarefa" required></textarea>
+                </div>
+
+                <div class="prioridade preencher">
+                    <label for="prioridade">Prioridade</label>
+                    <select id="prioridade" name="prioridade" required class="small-select">
+                        <option value="baixa">Baixa</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="urgente">Urgente</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="preencher">
+                <label for="local">Local</label>
+                <input id="local" name="local" type="text" placeholder="Local da tarefa" />
+            </div>
+
+            <div class="preencher">
+                <label for="dataLimite">Data limite</label>
+                <input id="dataLimite" name="dataLimite" type="date" min="2025-12-01" />
+            </div>
+
+            <div class="preencher recursos">
+                <label for="recursoInput">Recursos necessários</label>
+                <div class="recursos-controls">
+                    <input id="recursoInput" name="recursoInput" type="text" placeholder="Digite um recurso e pressione Enter ou Adicionar" />
+                    <button type="button" id="adicionarRecurso">Adicionar</button>
+                </div>
+                <ul id="recursosList" class="recursos-list"></ul>
+            </div>
+
+            <div class="preencher">
+                <label for="matricula">Matrícula</label>
+                <input id="matricula" name="matricula" type="text" inputmode="numeric" placeholder="Somente números" required />
+            </div>
+
+            <div class="preencher">
+                <label for="senha">Senha</label>
+                <input id="senha" name="senha" type="password" placeholder="Sua senha" required />
+            </div>
+
+            <a href="index.html" class="botao botao-voltar" id="voltar">Voltar</a>
+            <button class="botao" id="enviar" type="submit">Entrar</button>
+                
+        </form>
+    </main>
+</body>
+</html>
