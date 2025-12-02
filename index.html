@@ -1,11 +1,52 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Task Manager</title>
+    <title>Task Manager - Lista</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="script.js">
 </head>
-<body>
 
+<body>
+    <main class="main">
+        <header class="cabecalho">
+            <div class="logo">
+                <img src="logo.png" alt="Task Manager" class="logo">
+            </div>
+            <div>
+                <h1 id="loginTitle">Task Manager</h1>
+                <p class="texto">Lista de tarefas cadastradas</p>
+            </div>
+        </header>
+
+        <div class="lista-container">
+
+
+            <a href="tasklogin.html" class="botao botao-voltar" style="margin-bottom: 20px;">Cadastrar nova tarefa</a>
+
+            <p id="mensagem-vazia" class="texto" style="display:none; text-align:center; font-size: 1.3rem;">
+                Nenhuma tarefa cadastrada
+            </p>
+
+
+            <table id="tabela-tarefas" class="tabela" style="width:100%; border-collapse: collapse; display:none;">
+                <thead>
+                    <tr>
+                        <th>Prioridade</th>
+                        <th>Descrição</th>
+                        <th>Local</th>
+                        <th>Recursos necessários</th>
+                        <th>Data limite</th>
+                        <th>Matrícula</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
 </body>
 </html>

@@ -7,13 +7,14 @@ body {
     padding: 12px;
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
-    background: #f7f7f7;
+    background: #ffffff;
 }
 .main {
     max-width: 760px;
     margin: 24px auto;
-    padding: 20px;
-    background: #ffffff;
+    padding-right: 110px;
+    padding: 10px;
+    background: #b8aeae;
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
@@ -22,7 +23,7 @@ body {
     display: flex;
     gap: 12px;
     align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 .logo {
     width: 56px;
@@ -114,4 +115,57 @@ input:focus, textarea:focus, select:focus {
     padding: 6px 9px;
     border-radius: 6px;
     cursor: pointer;
+}
+
+
+
+.lista-container {
+    width: 95%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ffffffdd;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    font-size: 0.9rem;
+}
+
+.tabela thead {
+    background: #4A4A4A;
+    color: white;
+}
+
+.tabela th {
+    padding: 10px 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: o.95rem;
+}
+
+
+.tabela td {
+    padding: 8px 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.tabela tbody tr:hover {
+    background: #ececec;
+}
+
+
+#mensagem-vazia {
+    padding: 20px;
+    font-size: 1.4rem;
+    color: #555;
 }
